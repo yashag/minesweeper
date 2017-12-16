@@ -1,0 +1,65 @@
+@import '../../assets/styles/general.scss';
+
+.msw-app {
+  text-align: center;
+
+  .msw-results {
+    header.msw-results-header {
+      position: absolute;
+      font-size: 24px;
+    }
+
+    main.msw-results-body {
+      position: absolute;
+      top: 3em;
+
+      color: #3c3c3c;
+      font-size: 20px;
+    }
+
+    button.msw-results-confirm {
+      position: absolute;
+      bottom: 1em;
+      right: 1em;
+
+      width: 5em;
+      height: 2em;
+
+      background: $msw-primary-color;
+      border: 1px solid #ea5656;
+      border-radius: 2px;
+
+      cursor: pointer;
+    }
+  }
+  
+  header.msw-header {
+    display: flex;
+    flex-flow: column nowrap;  
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  
+    padding: 10px 0;
+    margin-bottom: 1em;
+  
+    background-color: #222;
+    color: white;
+  
+    div.msw-logo {
+      margin-bottom: 2em;
+
+      img.msw-logo-img {
+        animation: spin infinite 20s linear;
+        height: 80px;
+        float: left;
+      }
+
+      h1.msw-title {
+        display: inline-block;
+      }
+    }
+
+  }
+
+}
