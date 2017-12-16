@@ -3,7 +3,7 @@ Minesweeper
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-[[https://github.com/yashag/minesweeper/blob/master/img/minesweeperCapture.png|alt=MineSweeper]]
+![MineSweeper](./minesweeperCapture.PNG)
 
 Enjoy minesweeping!
 
