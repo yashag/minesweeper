@@ -149,6 +149,11 @@ module.exports = {
               cacheDirectory: true,
             },
           },
+          {
+            test: /\.scss$/,
+            include: paths.appSrc,
+            loaders: ["style-loader", "css-loader", "sass-loader"]
+          },
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.
           // "style" loader turns CSS into JS modules that inject <style> tags.
@@ -185,14 +190,6 @@ module.exports = {
                 },
               },
             ],
-          },
-          {
-            test: /\.scss$/,
-            loaders: [
-              require.resolve('style-loader'),
-              require.resolve('css-loader'),
-              require.resolve('sass-loader')
-            ]
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
           // When you `import` an asset, you get its (virtual) filename.
