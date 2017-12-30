@@ -22,6 +22,7 @@ There are several known bugs and issues at this point:
 ## Credits
 
 Credit to [Erik Ragnar Eliasson](http://www.erikeliasson.io/) for the mine icon
+
 Credit to [icons8](https://icons8.com/) for the mouse icons
 
 ## License
