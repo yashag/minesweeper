@@ -151,8 +151,8 @@ class Board extends Component {
         });
 
         return (
-            <section className = "msw-board">
-                <table className = "msw-board-grid" >
+            <section className="msw-board">
+                <table className="msw-board-grid" cellSpacing="0" cellPadding="0" >
                     <tbody >
                         {boardRows}
                     </tbody>

@@ -12,6 +12,7 @@ class Cell extends Component {
         };
 
         this._handleClick = this._handleClick.bind(this);
+        this._handleRightClick = this._handleRightClick.bind(this);
     }
 
     componentWillReceiveProps(newProps) {
@@ -27,12 +28,18 @@ class Cell extends Component {
     _handleClick(event) {
         event.preventDefault();
 
-        if(event.shiftKey && !this.state.revealed) {
+        if(!this.state.flagged) {
+            this.props.cellClick(this);
+        }
+    }
+
+    _handleRightClick(event) {
+        event.preventDefault();
+
+        if(!this.state.revealed) {
             this.setState({flagged: !this.state.flagged}, () => {
                 this.props.flagClick(this);
             });
-        } else if(!this.state.flagged) {
-            this.props.cellClick(this);
         }
     }
 
@@ -51,7 +58,7 @@ class Cell extends Component {
         }
 
         return (
-            <td className={classes} onClick={this._handleClick}>
+            <td className={classes} onClick={this._handleClick} onContextMenu={this._handleRightClick}>
                 {value}
             </td>
         );

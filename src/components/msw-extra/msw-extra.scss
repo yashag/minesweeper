@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+    section.msw-extra {
+        bottom: -18em;
+        left: 50%;
+        margin-left: -5em;
+    }
+}
+
+@media (min-width: 769px) {
+    section.msw-extra {
+        top: 16em;
+        left: 2em;
+    }
+}
+
+section.msw-extra {
+    $font-color: #424242;
+
+    position: absolute;
+    text-align: left;
+    
+    color: $font-color;
+
+    ul {
+        padding-left: 1em;
+        list-style-type: none;
+
+        li {
+            line-height: 1.4em;
+        }
+    }
+
+    div.msw-tutorial {
+        ul {
+            li {
+                margin: 1em 0;
+                font-size: 20px;
+
+                img {   
+                    float: left;
+                    width: 1.4em;
+                }
+
+                span {
+                    margin-left: 0.3em;
+                }
+            }
+        }
+    }
+
+}

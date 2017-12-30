@@ -1,11 +1,20 @@
-td.msw-board-cell {
-    $cell-perim: 2em;
+$cell-perim: 2em;
 
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    td.msw-board-cell {
+        $cell-perim: 1em;
+    }
+}
+
+td.msw-board-cell {
     display: inline-block;
     width: $cell-perim;
     height: $cell-perim;
     margin: 0.1em;
     background-color: #c5c5c5;
+
+    text-align: center;
     line-height: $cell-perim;
 
     cursor: pointer;

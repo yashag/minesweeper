@@ -26,19 +26,19 @@ class Settings extends Component {
                     <div className="msw-settings-input-container">
                         <label htmlFor="rows" className="msw-settings-label">rows</label>
                         <input type="number" name="rows" className="msw-settings-input" placeholder="rows"
-                        min="1" max="300" defaultValue={this.props.rows} />
+                        min="1" max="30" defaultValue={this.props.rows} />
                     </div>
                     
                     <div className="msw-settings-input-container">
                         <label htmlFor="cols" className="msw-settings-label">cols</label>
                         <input type="number" name="cols" className="msw-settings-input" placeholder="columns"
-                        min="1" max="300" defaultValue={this.props.cols} />
+                        min="1" max="30" defaultValue={this.props.cols} />
                     </div>
                     
                     <div className="msw-settings-input-container">
                         <label htmlFor="mines" className="msw-settings-label">mines</label>
                         <input type="number" name="mines" className="msw-settings-input" placeholder="mines"
-                        min="1" max="9000" defaultValue={this.props.mines} />
+                        min="1" max="899" defaultValue={this.props.mines} />
                     </div>
 
                     <input type="submit" className="msw-settings-generate" value="Generate board!" />

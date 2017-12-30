@@ -5,6 +5,7 @@ import './App.scss';
 // include styles
 import 'rodal/lib/rodal.css';
 
+import Extra from '../msw-extra/msw-extra';
 import Board from '../msw-board/msw-board';
 import Settings from '../msw-settings/msw-settings';
 
@@ -100,6 +101,9 @@ class App extends Component {
                 cols={this.state.cols}
                 mines={this.state.mines}
                 flags={this.state.flags} />
+
+        <Extra></Extra>
+
       </div>
     );
   }
